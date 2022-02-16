@@ -1,0 +1,25 @@
+label {
+    font-size: 20px;
+}
+
+.input {
+    width: 200px;
+    height: 20px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.code_input {
+    resize: none;
+    width: 50vw;
+    height: 25vh;
+    border: 2px solid;
+    font-size: 20px;
+}
+
+.submit_button {
+    width: 80px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 15px;
+}

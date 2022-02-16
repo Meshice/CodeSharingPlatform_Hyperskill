@@ -1,0 +1,15 @@
+.date {
+    font-size: 15px;
+    font-weight: bold;
+    color: darkgreen;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.code {
+    margin-left: 10px;
+    margin-top: 5px;
+    background: #DCDCDC;
+    width: 50vw;
+    border: solid #2F4F4F;
+}

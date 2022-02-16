@@ -1,0 +1,7 @@
+# Project exclude paths
+/.gradle/
+/Code Sharing Platform/task/build/
+/Code Sharing Platform/task/out/
+/Code Sharing Platform/task/out/production/classes/
+/Topics/LocalDate/Find all mondays/out/
+/Topics/LocalDate/Find all mondays/out/production/classes/

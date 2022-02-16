@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}"></title>
+    <link rel="stylesheet" href="../static/css/get_code.css" th:href="@{/css/get_code.css}">
+    <link href='https://yastatic.net/highlightjs/8.2/styles/solarized_light.min.css' rel='stylesheet'/>
+    <script src='https://yastatic.net/highlightjs/8.2/highlight.min.js'></script>
+    <script type='text/javascript'>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+<div th:each="code : ${codes}">
+    <span id="load_date" class="date" th:text="${code.getDate()}"></span>
+    <div class="code">
+        <pre id="code_snippet"><code th:text="${code.getCode()}" style="background-color: #DCDCDC;"></code></pre>
+    </div>
+    <div th:if="${codes.size() == 1 && code.isHidden() == true}">
+    <span id="time_restriction" th:text="${code.getTime()}" th:if="${code.isTimeIsRequired()}"></span>
+    <br>
+    <span id="views_restriction" th:text="${code.getViews()}" th:if="${code.isViewIsRequired()}"></span>
+    </div>
+    <br>
+</div>
+</body>
+</html>
